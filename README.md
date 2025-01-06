@@ -21,8 +21,8 @@ git config --global user.name "name"
 
 4. Execute Following Commands:
 ```bash
-ssh-keygen -o -t rsa -C "email"
-chmod 400 ~/.ssh/id_rsa
+sudo ssh-keygen -o -t rsa -C "email"
+sudo chmod 400 ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
 ```
 5. Copy the ssh key.
