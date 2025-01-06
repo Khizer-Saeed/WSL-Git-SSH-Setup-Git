@@ -1,29 +1,29 @@
 # WSL Github SSH Guide
 1. Navigate to the User Directory:
 ```bash
-    cd ~
+cd ~
 ```
 **OR**
 ```bash
-    cd /home/[User]
+cd /home/[User]
 ```
 
 2. Create a **.ssh** file:
 ```bash
-    sudo mkdir .ssh
+sudo mkdir .ssh
 ```
 
 3. Set your global github credentials:
 ```bash
-    git config --global user.email "email"
-    git config --global user.name "name"
+git config --global user.email "email"
+git config --global user.name "name"
 ```
 
 4. Execute Following Commands:
 ```bash
-    ssh-keygen -o -t rsa -C "email"
-    chmod 400 ~/.ssh/id_rsa
-    cat ~/.ssh/id_rsa.pub
+ssh-keygen -o -t rsa -C "email"
+chmod 400 ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
 ```
 5. Copy the ssh key.
 6. In your github profile setting navigate to the **SSH And GPG Keys**.
