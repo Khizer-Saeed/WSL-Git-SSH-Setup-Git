@@ -8,7 +8,7 @@ cd ~
 cd /home/[User]
 ```
 
-2. Create a **.ssh** file:
+2. Create a **.ssh** file if not already created:
 ```bash
 sudo mkdir .ssh
 ```
@@ -21,7 +21,7 @@ git config --global user.name "name"
 
 4. Execute Following Commands:
 ```bash
-sudo ssh-keygen -o -t rsa -C "email"
+sudo ssh-keygen
 ```
 5. Enter following for the options:
     - Enter file in which to save the key (/root/.ssh/id_rsa): /home/[user]/.ssh/id_rsa
@@ -36,3 +36,7 @@ cat ~/.ssh/id_rsa.pub
 6. Copy the ssh key.
 7. In your github profile setting navigate to the **SSH And GPG Keys**.
 8. Click on **New SSH key**, give a name to the key and paste the key there.
+
+```bash
+sudo service ssh reload
+```
